@@ -1,0 +1,91 @@
+body {
+  background: #fff;
+  font-family: Georgia, serif;
+  color: #fff;
+  text-align:center;
+  font-size: 14px;
+}
+
+#menu{
+    height:40px;
+    width:100%;
+    background: #D23431;
+}
+#Footer{
+     background: #D23431;
+    height:50px;
+    color:#000;
+    margin-top:20px;
+    font-size: 12px;
+    font-family: '宋体';
+}
+.Clear{
+    clear:both;
+}
+
+#block{
+	height:10px;
+    width:100%;
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+}
+#box0{
+ margin:0 auto;
+}
+#box2{
+  height:800px;
+    width:100%;
+  float:left;
+text-align:center
+}
+#heatmap{
+    position:absolute;
+    left:10%;
+    height:900px;
+    width:80%;
+    background: rgb(242,242,242);
+ float:left;
+}
+#baidumap{
+    height:800px;
+    width:80%;
+    
+    margin:0 auto
+}
+#linechart{
+    height:800px;
+    width:1000px;
+    float:left;
+    margin:0 auto
+}
+#shenyiguocheng{
+    height:800px;
+    width:500px;
+    float:left;
+    margin:0 auto
+}
+#biaozhun{
+    height:800px;
+    width:800px;
+    float:left;
+    margin:0 auto
+}
+#niandai{
+    height:500px;
+    width:500px;
+    float:left;
+    margin:0 auto
+}
+#leixing{
+    height:500px;
+    width:800px;
+    float:left;
+    margin:0 auto
+}
+#title{
+    margin:0 auto;
+}
+#miaoshu{ 
+background: rgb(242,242,242);
+float:left;
+}
+.text{text-align:center;}

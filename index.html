@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css"media="screen"/>
+  <script src="../d3.min.js" charset="UTF-8"></script>
+<script src="../echarts.min.js" charset="UTF-8"></script>
+<script src="http://echarts.baidu.com/asset/map/js/china.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G44Tyq5H6ojT05nsq8WvkyhLFeQoxOV8"></script>
+<script src="css/infographic.js"></script>
+<script src="js/dist/multext.js" charset="utf-8"></script>
+
+<!--biaoge
+<link rel="stylesheet" href="js/biaogechajian/bootstrap.css">
+<link rel="stylesheet" href="js/biaogechajian/bootstrap-table.css">
+<script src="../jquery.min.js"></script>
+<script src="js/biaogechajian/bootstrap-table.js"></script>
+-->
+<!--menu-->
+  <link rel="stylesheet" href="css/menu/menu.css" media="screen" />
+
+ <!--timeline-->
+  <link rel="stylesheet" href="css/timeline/style.css" media="screen" />
+  <script src="js/timeline/jquery.min.js"></script>
+  <script src="js/timeline/jquery.timelinr-0.9.6.js"></script>
+  <script src="js/dist/bmap.js"></script>
+  <script>
+    $(function(){
+      $().timelinr({
+        arrowKeys: 'true',
+        autoPlay: 'true',
+        autoPlayDirection: 'forward',
+        autoPlayPause: 3000
+      })
+    });
+  </script>
+
+
+ </head>
+
+ <body>
+<div id='title' class="titleimg">
+    <img src="data/title/title.jpg"  width="80%" /> 
+</div>
+<div id="menu">
+<script src="js/menu.js" ></script>
+</div>
+
+<div id="container">
+<div id="box0" style="width:80%;background: rgb(242,242,242)">
+<div class="text" style="color:#000;font-size:30px;font-family:'宋体';font-weight:bold">
+<br>近30年中国入选的世界遗产(52项)
+</div>
+<div class="text" style="color:#A3A3A3;font-size:20px;font-family:'宋体';font-weight:bold">
+<br>注：《世界遗产名录》
+</div>
+<div id="timeline">
+    <ul id="dates">
+      <li><a href="#1987">1987</a></li>
+      <li><a href="#1990">1990</a></li>
+      <li><a href="#1992">1992</a></li>
+      <li><a href="#1994">1994</a></li>
+      <li><a href="#1996">1996</a></li>
+      <li><a href="#1997">1997</a></li>
+      <li><a href="#1998">1998</a></li>
+      <li><a href="#1999">1999</a></li>
+      <li><a href="#2000">2000</a></li>
+      <li><a href="#2001">2001</a></li>
+      <li><a href="#2003">2003</a></li>
+      <li><a href="#2004">2004</a></li>
+      <li><a href="#2005">2005</a></li>
+      <li><a href="#2006">2006</a></li>
+      <li><a href="#2007">2007</a></li>
+      <li><a href="#2008">2008</a></li>
+      <li><a href="#2009">2009</a></li>
+      <li><a href="#2010">2010</a></li>
+      <li><a href="#2011">2011</a></li>
+      <li><a href="#2012">2012</a></li>
+      <li><a href="#2013">2013</a></li>
+      <li><a href="#2014">2014</a></li>
+      <li><a href="#2015">2015</a></li>
+      <li><a href="#2016">2016</a></li>
+      <li><a href="#2017">2017</a></li>
+    </ul>
+    <ul id="issues">
+      <li id="1987">
+       <div class="divcss5" >
+          <img src="data/timeline/北京故宫.jpg"  /> 
+          <span><p><br><br><br>明清故宫<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/秦始皇兵马俑.jpg"  /> 
+          <span><p><br><br><br>秦始皇陵及兵马俑坑<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/莫高窟.jpg"  /> 
+          <span><p><br><br><br>莫高窟<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/泰山.jpg"  /> 
+          <span><p><br><br><br>泰山<br><br>世界文化与自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/周口店.jpeg"  /> 
+          <span><p><br><br><br>周口店北京人遗址<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/长城.jpg"  /> 
+          <span><p><br><br><br>长城<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1990">
+        <div class="divcss5" >
+          <img src="data/timeline/黄山.jpg"  /> 
+          <span><p><br><br><br>黄山<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        </li>
+      <li id="1992">
+        <div class="divcss5" >
+          <img src="data/timeline/黄龙风景区.jpg"  /> 
+          <span><p><br><br><br>黄龙风景名胜区<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/九寨沟.jpg"  /> 
+          <span><p><br><br><br>九寨沟风景名胜区<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/武陵源.jpg"  /> 
+          <span><p><br><br><br>武陵源风景名胜区<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1994">
+       <div class="divcss5" >
+          <img src="data/timeline/武当山.jpg"  /> 
+          <span><p><br><br><br>武当山古建筑群<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/布达拉宫.jpg"  /> 
+          <span><p><br><br><br>拉萨布达拉宫历史建筑群<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/承德避暑山庄.jpeg"  /> 
+          <span><p><br><br><br>承德避暑山庄及其周围寺庙<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/孔府.jpg"  /> 
+          <span><p><br><br><br>曲阜孔庙、孔林和孔府<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1996">
+        <div class="divcss5" >
+          <img src="data/timeline/庐山.jpg"  /> 
+          <span><p><br><br><br>庐山国家公园<br><br>文化景观<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/乐山大佛.jpg"  /> 
+          <span><p><br><br><br>峨眉山-乐山大佛<br><br>世界文化与自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1997">
+        <div class="divcss5" >
+          <img src="data/timeline/平遥古城.jpg"  /> 
+          <span><p><br><br><br>平遥古城<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/苏州园林.jpg"  /> 
+          <span><p><br><br><br>苏州古典园林<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/丽江古城.jpg"  /> 
+          <span><p><br><br><br>丽江古城<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1998">
+        <div class="divcss5" >
+          <img src="data/timeline/颐和园.jpg"  /> 
+          <span><p><br><br><br>北京皇家园林-颐和园<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/天坛.jpg"  /> 
+          <span><p><br><br><br>北京皇家祭坛-天坛<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="1999">
+        <div class="divcss5" >
+          <img src="data/timeline/大足石刻.jpg"  /> 
+          <span><p><br><br><br>大足石刻<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/武夷山.jpg"  /> 
+          <span><p><br><br><br>武夷山<br><br>世界文化与自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2000">
+        <div class="divcss5" >
+          <img src="data/timeline/西递宏村.jpg"  /> 
+          <span><p><br><br><br>皖南古村落－西递、宏村<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/明清皇家陵寝.jpg"  /> 
+          <span><p><br><br><br>明清皇家陵寝<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/龙门石窟.jpg"  /> 
+          <span><p><br><br><br>龙门石窟<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/都江堰.jpg"  /> 
+          <span><p><br><br><br>青城山-都江堰<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2001">
+        <div class="divcss5" >
+          <img src="data/timeline/云冈石窟.jpg"  /> 
+          <span><p><br><br><br>云冈石窟<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2003">
+       <div class="divcss5" >
+          <img src="data/timeline/云南三江并流.jpg"  /> 
+          <span><p><br><br><br>云南三江并流保护区<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2004">
+       <div class="divcss5" >
+          <img src="data/timeline/高句丽王城.jpg"  /> 
+          <span><p><br><br><br>高句骊王城、王陵及贵族墓葬<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2005">
+       <div class="divcss5" >
+          <img src="data/timeline/澳门历史城区.jpg"  /> 
+          <span><p><br><br><br>澳门历史城区<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2006">
+       <div class="divcss5" >
+          <img src="data/timeline/四川大熊猫栖息地.jpg"  /> 
+          <span><p><br><br><br>四川大熊猫栖息地<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2007">
+       <div class="divcss5" >
+          <img src="data/timeline/开平碉楼.jpeg"  /> 
+          <span><p><br><br><br>开平碉楼与村落<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/中国南方斯特.jpg"  /> 
+          <span><p><br><br><br>中国南方喀斯特<br><br>世界文化自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2008">
+       <div class="divcss5" >
+          <img src="data/timeline/福建土楼.jpg"  /> 
+          <span><p><br><br><br>福建土楼<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/三清山.jpeg"  /> 
+          <span><p><br><br><br>三清山国家公园<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2009">
+       <div class="divcss5" >
+          <img src="data/timeline/五台山.jpg"  /> 
+          <span><p><br><br><br>五台山<br><br>文化景观<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2010">
+       <div class="divcss5" >
+          <img src="data/timeline/中国丹霞.jpg"  /> 
+          <span><p><br><br><br>中国丹霞<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/登封天地之中.jpg"  /> 
+          <span><p><br><br><br>登封 “天地之中”历史古迹<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2011">
+       <div class="divcss5" >
+          <img src="data/timeline/杭州西湖.jpg"  /> 
+          <span><p><br><br><br>杭州西湖文化景观<br><br>文化景观<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2012">
+       <div class="divcss5" >
+          <img src="data/timeline/澄江化石遗址.jpg"  /> 
+          <span><p><br><br><br>澄江化石遗址<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/元上都遗址.jpeg"  /> 
+          <span><p><br><br><br>元上都遗址<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2013">
+       <div class="divcss5" >
+          <img src="data/timeline/红河哈尼梯田.jpg"  /> 
+          <span><p><br><br><br>红河哈尼梯田文化景观<br><br>文化景观<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/新疆天山.jpeg"  /> 
+          <span><p><br><br><br>新疆天山<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2014">
+       <div class="divcss5" >
+          <img src="data/timeline/丝绸之路.jpeg"  /> 
+          <span><p><br><br><br>丝绸之路：长安-天山廊道的路网<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/大运河.jpg"  /> 
+          <span><p><br><br><br>大运河<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2015">
+       <div class="divcss5" >
+          <img src="data/timeline/土司遗址.jpg"  /> 
+          <span><p><br><br><br>土司遗址<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2016">
+       <div class="divcss5" >
+          <img src="data/timeline/神农架.jpg"  /> 
+          <span><p><br><br><br>神农架<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/左江花山岩画.jpg"  /> 
+          <span><p><br><br><br>左江花山岩画<br><br>文化景观<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+      <li id="2017">
+       <div class="divcss5" >
+          <img src="data/timeline/鼓浪屿.jpg"  /> 
+          <span><p><br><br><br>鼓浪屿<br><br>世界文化遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+        <div class="divcss5" >
+          <img src="data/timeline/可可西里.jpg"  /> 
+          <span><p><br><br><br>可可西里<br><br>世界自然遗产<br></p></span>    
+          <a href="#" class="now">&nbsp;</a>
+        </div>
+      </li>
+    </ul>
+    <div id="grad_left"></div>
+    <div id="grad_right"></div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
+  </div>
+  <div class="text" style="color:#A3A3A3;font-size:14px;font-family:'宋体';font-weight:bold">
+数据来源：联合国教科文组织官网<br>
+<img src="data/timeline/text.jpg"  width="80%" /> 
+</div>
+<!--
+<div class="text" style="color:#A3A3A3;font-size:20px;font-family:'宋体';font-weight:bold">
+<br><p><p>我国于1985年12月成为联合国教科文组织世界遗产委员会成员国。自1987年第一批
+<br>遗产成功入选《世界遗产名录》以来，截止2017年7月12日第41届世界遗产大会结束，
+<br>我国共计拥有52项世界遗产，遗产总数名列世界第二位。
+</div>-->
+  </div>
+  
+ <div id="box1">
+  <div id="heatmap">
+     <script src="js/heatmap.js" ></script>
+   </div>
+   <div id="heatmapmiaoshu">kkkkkkk</div>
+</div>
+
+ <div id="box2">
+<div id="block">
+   <div id="niandaibiaoti"></div>
+  <div id="niandai">
+     <script src="js/niandai.js" ></script>
+   </div>
+ </div>
+  <div id="block">
+     <div id="leixingbiaoti"></div>
+   <div id="leixing">
+     <script src="js/leixing.js" ></script>
+   </div>
+   </div>
+   <div id="block">
+     <div id="biaozhunbiaoti"></div>
+   <div id="biaozhun">
+     <script src="js/biaozhun.js" ></script>
+     
+   </div>
+   </div>
+
+ </div>
+
+
+ <div id="box3" ">
+ <div id="shenyibuzhoubiaoti"> <img src="data/howshenyi/buzhoubiaoti.jpg"  width="100%" /> </div>
+ <div id="shenyibuzhou" style="color: #000"> <img src="data/howshenyi/buzhou.jpg"  width="90%" /> </div>
+ <div style="color: #333;font-family: 'sans-serif';font-size: 12px;width: 1000px;float: left;text-align: left;margin-left: 8%" > <br>数据来源：中国世界遗产网</div>
+ <div id="shenyibuzhoubiaoti"> <img src="data/howshenyi/linechartbiaoti.jpg"  width="100%" /> </div>
+   <div id="linechart">
+     <script src="js/linechart.js" ></script>
+   </div>
+
+ </div>
+
+ <div id="box4">
+  <div id="baidumap">
+    <script src="data/baidumap/yichan.js" ></script>
+     <script src="js/baidumap.js" ></script>
+
+   </div>
+ </div>
+</div>
+
+<div class="Clear"><</div>
+    <div id="Footer"><br>制作人员：万植丞、任珂(东北师范大学)、刘逸鹏、余佳瑾
+    <br>指导老师：谢光玉  制作单位：武汉学院传播系</div>
+ <script>
+   for(var k=0;k<menudata.length;k++)
+        {
+          d3.selectAll("div#box"+k).style("display","none");
+        }
+        d3.selectAll("div#box"+0).style("display","block");
+ </script>
+ </body>
+ </html>
+ 

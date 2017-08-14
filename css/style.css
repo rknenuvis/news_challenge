@@ -1,0 +1,127 @@
+body {
+  background: #fff;
+  font-family: Georgia, serif;
+  color: #fff;
+  text-align:center;
+  font-size: 14px;
+}
+
+#container{
+    margin:0 auto;
+}
+#menu{
+    height:40px;
+    width:100%;
+    background: #D23431;
+}
+#Footer{
+     background: #D23431;
+    height:50px;
+    color:#000;
+    margin-top:20px;
+    font-size: 12px;
+    font-family: '宋体';
+}
+.Clear{
+    clear:both;
+}
+#block{
+   
+float: left;
+width: 50%;
+height:600px;
+
+}
+#blockmeigui{
+   
+float: left;
+width: 100%;
+height:700px;
+
+}
+
+#box0{
+ margin:0 auto;
+}
+#box2{
+ margin:0 auto;
+  width: 80%;
+   height:1300px;
+   background: rgb(242,242,242);
+}
+#box3{
+ margin:0 auto;
+  width: 80%;
+  height: 1000px;
+   background: rgb(242,242,242);
+}
+
+#heatmap{
+    
+    height:900px;
+    width: 80%;
+    background: rgb(242,242,242);
+     margin:0 auto
+}
+#heatmapmiaoshu{
+    
+    height:100px;
+    width: 80%;
+    background: rgb(242,242,242);
+     margin:0 auto
+}
+#baidumap{
+    height:800px;
+    width:80%;
+    
+    margin:0 auto
+}
+#linechart{
+    height:600px;
+    width:100%;
+    float:left;
+    margin:0 auto
+}
+#shenyibuzhou{
+  background: rgb(242,242,242);
+   
+    width:100%;
+    float:left;
+    margin:0 auto
+}
+#biaozhun{
+    height:600px;
+    width:100%;
+    float:left;
+    margin:0 auto
+}
+#biaozhunmiaoshu{
+    height:700px;
+    width:25%;
+    float:left;
+    margin:0 auto
+}
+#niandai{
+    height:500px;
+    width:100%;
+    float:left;
+    margin:0 auto
+}
+#leixing{
+    height:500px;
+    width:100%;
+    float:left;
+    margin:0 auto
+}
+#title{
+    margin:0 auto;
+}
+
+.text{text-align:center;}
+#shenyibuzhoubiaoti{
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float:left;
+  background: rgb(242,242,242);
+}
