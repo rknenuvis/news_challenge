@@ -1,5 +1,5 @@
 var myChartline = echarts.init(document.getElementById('linechart'));
-d3.csv("./data/howshenyi/中国30年申遗数量.csv",function(data){
+d3.csv("./data/howshenyi/30year.csv",function(data){
 //var width = document.getElementById("shenyibuzhou").scrollWidth;
 //var height = document.getElementById("shenyibuzhou").scrollWidth;
 /*console.log(width)
@@ -57,7 +57,7 @@ var option = {
             color:"#333",
             fontSize:12
         },
-         subtext:'\n        自1987年第一批遗产申遗成功以来，截至2017年我国共有世界遗产52项。正以平均每两年申请一项世界遗产的速度增长。\n从增长类型来看世界文化遗产的增长量始终居高不下，而世界自然遗产自1993年3项申遗后，一直到2004年才出现增长，直至\n2006年世界自然遗产的年申遗增长量才出现总体上升态势。文化景观和世界文化与自然遗产的增长量始终偏低。',
+        // subtext:'\n        自1987年第一批遗产申遗成功以来，截至2017年我国共有世界遗产52项。正以平均每两年申请一项世界遗产的速度增长。\n从增长类型来看世界文化遗产的增长量始终居高不下，而世界自然遗产自1993年3项申遗后，一直到2004年才出现增长，直至\n2006年世界自然遗产的年申遗增长量才出现总体上升态势。文化景观和世界文化与自然遗产的增长量始终偏低。',
          subtextStyle: {
 			color: '#000',
 			fontStyle: 'normal',
@@ -65,7 +65,7 @@ var option = {
 			fontSize: 18,
 		},
        x:'8%',
-        y:'80%',
+        y:'96%',
 
      },
      toolbox: {
@@ -93,7 +93,7 @@ var option = {
 	grid: {
 		left: '5%',
 		right: '5%',
-		bottom: '30%',
+		bottom: '13%',
 		top:'10%',
 		padding:'0 0 10 0',
 		containLabel: true,
@@ -194,7 +194,7 @@ var option = {
 	{   show:true,
 	        height:30,
 	        xAxisIndex: 0,
-	        bottom:'20%',
+	        bottom:'5%',
 	        type: 'slider',
 	        start: 1,
 	        end: 35,

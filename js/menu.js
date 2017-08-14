@@ -25,7 +25,7 @@ svgmenu.selectAll(".menu")
             .attr("width",30)
             .attr("height",30)
             .attr("xlink:href",function(d,i){
-                return "./data/menu/"+menudata[i]+".png";
+                return "./data/menu/"+i+".png";
             })
             .on("mouseover",function(d,i){
 				tooltipmenu.html(menudata[i])

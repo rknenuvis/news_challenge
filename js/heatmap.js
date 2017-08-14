@@ -1,10 +1,10 @@
 
 var myChart = echarts.init(document.getElementById('heatmap'),'infographic');
 //d3.json("./data/baidumap/遗产.json",function(yichandata0){
-d3.json("./data/heatmap/自然遗产.json",function(yichandata0){
-  d3.json("./data/heatmap/文化遗产.json",function(yichandata1){
-    d3.json("./data/heatmap/文景遗产.json",function(yichandata2){
-        d3.json("./data/heatmap/自文遗产.json",function(yichandata3){
+d3.json("./data/heatmap/zi.json",function(yichandata0){
+  d3.json("./data/heatmap/wen.json",function(yichandata1){
+    d3.json("./data/heatmap/wenjing.json",function(yichandata2){
+        d3.json("./data/heatmap/wenzi.json",function(yichandata3){
 
 var scattersize=15;
 
@@ -191,8 +191,8 @@ option = {
         formatter:'{a}:{b0}'
     },
     grid: {
-        right: 30,
-        top: 100,
+        right: '3%',
+        top: '15%',
         bottom: 40,
         width: '20%'
     },

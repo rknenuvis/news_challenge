@@ -1,8 +1,9 @@
 draw_leixing();
 function draw_leixing(){
     var font=18;
-    var iconsize=220;
+    
     var width = document.getElementById("leixing").scrollWidth;
+    var iconsize=width/2.6;
     console.log(width)
     var svg=d3.select("div#leixingbiaoti")
             .append("svg")

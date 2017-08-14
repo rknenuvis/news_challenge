@@ -42,6 +42,12 @@ var pathSymbols = {
 
 option = {
     title:{
+        textStyle:{
+        fontFamily:"黑体",
+        fontWeight:'bold',
+        color:'black',
+        fontSize:12
+       },
         text:' * 此处以文化遗产最初形成的时期分类',
         left:'left'
     },
@@ -56,6 +62,7 @@ option = {
         }
     },
     grid:{
+        top:'20%',
         bottom:20
     },
     xAxis: {
@@ -97,7 +104,7 @@ option = {
         barGap: '-100%',
         symbolPosition: 'end',
         symbolSize: 50,
-        symbolOffset: [0, '-100%'],
+        symbolOffset: [0, '-80%'],
         data: [{
             value: 1,
             symbol: pathSymbols.yuangu,
