@@ -16,7 +16,7 @@ body {
 }
 #Footer{
      background: #D23431;
-    height:50px;
+    height:70px;
     color:#000;
     margin-top:20px;
     font-size: 12px;
@@ -52,7 +52,7 @@ height:700px;
 #box3{
  margin:0 auto;
   width: 80%;
-  height: 1250px;
+  height: 1300px;
    background: rgb(242,242,242);
 }
 
@@ -120,8 +120,15 @@ height:700px;
 .text{text-align:center;}
 #shenyibuzhoubiaoti{
   width: 50%;
-  margin-top: 20px;
+  
   margin-bottom: 20px;
-  float:left;
+  
+  background: rgb(242,242,242);
+}
+#linechartbiaoti{
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
   background: rgb(242,242,242);
 }

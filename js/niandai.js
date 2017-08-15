@@ -42,13 +42,13 @@ var pathSymbols = {
 
 option = {
     title:{
-        textStyle:{
-        fontFamily:"黑体",
-        fontWeight:'bold',
+        subtextStyle:{
+        fontFamily:"宋体",
+        //fontWeight:'bold',
         color:'black',
         fontSize:12
        },
-        text:' * 此处以文化遗产最初形成的时期分类',
+        subtext:'注：此处以文化遗产最初形成的时期分类',
         left:'left'
     },
     tooltip: {

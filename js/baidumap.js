@@ -10,7 +10,7 @@ map.enableScrollWheelZoom(true);
 // 定义一个控件类,即function
     function ZoomControl(){
       // 默认停靠位置和偏移量
-      this.defaultAnchor = BMAP_ANCHOR_TOP_LEFT;
+      this.defaultAnchor = BMAP_ANCHOR_BOTTOM_RIGHT;
       this.defaultOffset = new BMap.Size(10, 10);
     }
 
@@ -28,7 +28,7 @@ map.enableScrollWheelZoom(true);
       div.style.cursor = "pointer";
       div.style.border = "2px solid gray";
       div.style.backgroundColor = "white";
-      div.style.fontSize="30px";
+      div.style.fontSize="20px";
       // 绑定事件,点击一次放大两级
       // 添加DOM元素到地图中
       map.getContainer().appendChild(div);

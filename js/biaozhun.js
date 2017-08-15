@@ -30,8 +30,8 @@ option = {
     title : {
        // text: '申遗标准',
        subtextStyle:{
-        fontFamily:"黑体",
-        fontWeight:'bold',
+        fontFamily:"宋体",
+        //fontWeight:'bold',
         color:'black',
         fontSize:12
        },

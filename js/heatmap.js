@@ -119,14 +119,21 @@ option = {
     title: [
         {
             text: '中国世界遗产分布图',
-            top:'4%',
+            top:'3%',
             left: 'center',
             textStyle: {
                 color: '#000',
                 fontSize:30,
-                fontWeight:500
+                fontFamily:'宋体',
+                fontWeight:'bold',
             },
-            subtext: '（各省点遗产数量，包含跨省共同申遗的项目，如建筑群、区域自然遗产等\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n数据来源:联合国教科文组织官网，国家文物局官网',//'除了北京拥有7项世界遗产外，华夏腹地的河南拥有6项世界遗产屈居第二；云南，四川以5项世界遗产居于第三。而上海、海南、香港、台湾成为中国仅有的4个没有世界文化遗产的省区。\n(每省的遗产统计，包含跨省共同申遗的项目如建筑群，地区自然遗产等)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n数据来源:联合国教科文组织官网，国家文物局官网',
+            subtextStyle: {
+                color: '#A3A3A3',
+                fontSize:18,
+                fontFamily:'宋体',
+                fontWeight:'bold',
+            },
+            subtext: '\n注：各省的遗产数量，包含跨省共同申遗的项目，如建筑群、区域自然遗产等\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n数据来源:联合国教科文组织官网，国家文物局官网',//'除了北京拥有7项世界遗产外，华夏腹地的河南拥有6项世界遗产屈居第二；云南，四川以5项世界遗产居于第三。而上海、海南、香港、台湾成为中国仅有的4个没有世界文化遗产的省区。\n(每省的遗产统计，包含跨省共同申遗的项目如建筑群，地区自然遗产等)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n数据来源:联合国教科文组织官网，国家文物局官网',
         },
         {
             id: 'statistic',
@@ -192,7 +199,7 @@ option = {
     },
     grid: {
         right: '3%',
-        top: '15%',
+        top: '18%',
         bottom: 40,
         width: '20%'
     },
@@ -341,6 +348,7 @@ option = {
 };
  myChart.setOption(option);
  //window.onresize = myCharts.resize();
+ /*
  var svg=d3.select("#heatmap")
             .append("svg")
             .attr("width",'100%')
@@ -359,7 +367,7 @@ svg.append("image")
     .attr("height",'130px')
      .attr("xlink:href",function(d){
                 return "./data/heatmap/text.jpg";
-            });
+            });*/
             /*var str = "除了北京拥有7项世界遗产外，华夏腹地的河南拥有6项世界遗产屈居第二；云南，四川以5项世界遗产居于第三。而上海、海南、香港、台湾成为中国仅有的4个没有世界文化遗产的省区。";       
 appendMultiText(svg,str,'15%',10,1800,50,"simsun");*/
 
