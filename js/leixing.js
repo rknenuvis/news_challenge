@@ -3,7 +3,7 @@ function draw_leixing(){
     var font=18;
     
     var width = document.getElementById("leixing").scrollWidth;
-    var iconsize=width/2.6;
+    var iconsize=width/4;
     console.log(width)
     var svg=d3.select("div#leixingbiaoti")
             .append("svg")
@@ -171,18 +171,26 @@ option = {
     },
     ],
     yAxis: [{gridIndex: 0,
-        show: false
+        show: false,
+        min:1,
+        max:3
     },
     {gridIndex: 1,
-        show: false
+        show: false,
+        min:1,
+        max:3
     },
     {gridIndex: 2,
-        show: false
+        show: false,
+        min:1,
+        max:3
     },
     {gridIndex: 3,
-        show: false
+        show: false,
+        min:1,
+        max:3
     }],
-    graphic: {
+    /*graphic: {
          elements: [{
              type: 'image',
              style: {
@@ -223,8 +231,47 @@ option = {
              left: '56.5%',
              top: '53%'
          }]
+     },*/
+    series: [
+    {
+            name: 'I',
+            type: 'scatter',
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: ["世界自然遗产",2],
+            symbol:'image://./data/tezheng/leixing/ziran.png',
+            symbolSize:iconsize
      },
-    series: [{
+     {
+            name: 'I2',
+            type: 'scatter',
+            xAxisIndex: 2,
+            yAxisIndex: 1,
+            data: ["世界文化遗产",2],
+            symbol:'image://./data/tezheng/leixing/wenhua.png',
+            symbolSize:iconsize
+     },
+     {
+            name: 'I3',
+            type: 'scatter',
+            xAxisIndex: 4,
+            yAxisIndex: 2,
+            data: ["世界文化与自然遗产",2],
+            symbol:'image://./data/tezheng/leixing/wenzi.png',
+            symbolSize:iconsize
+     },
+
+     {
+            name: 'I4',
+            type: 'scatter',
+            xAxisIndex: 6,
+            yAxisIndex: 3,
+            data: ["文化景观",2],
+            symbol:'image://./data/tezheng/leixing/wenjing.png',
+            symbolSize:iconsize
+     },
+//////pie
+    {
         "name": "世界自然遗产",
         "center": [
             "25%",
